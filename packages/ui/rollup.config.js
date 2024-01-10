@@ -1,35 +1,47 @@
+import { createRequire } from 'node:module';
+import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import typescript from '@rollup/plugin-typescript';
-import peerDepsExternal from 'rollup-plugin-peer-deps-external';
-import cssOnly from 'rollup-plugin-css-only';
 import postcss from 'rollup-plugin-postcss';
-import styles from 'rollup-plugin-styles';
-import packageJson from './package.json' assert { type: 'json' };
-import path from 'path';
-import { libStylePlugin } from 'rollup-plugin-lib-style';
+import dts from 'rollup-plugin-dts';
 
-export default {
-	input: 'src/index.tsx',
-	output: [
-		{
-			file: packageJson.main,
-			format: 'cjs',
-			sourcemap: true,
-			name: 'react-lib',
-		},
-		{
-			file: packageJson.module,
-			format: 'esm',
-			sourcemap: true,
-		},
-	],
-	plugins: [
-		libStylePlugin(),
-		resolve(),
-		commonjs(),
-		peerDepsExternal(),
-		typescript({ tsconfig: './tsconfig.json' }),
-		// postcss({ modules: true, extract: true, minimize: true }),
-	],
-};
+// This is required to read package.json file when
+// using Native ES modules in Node.js
+// https://rollupjs.org/command-line-interface/#importing-package-json
+const requireFile = createRequire(import.meta.url);
+const packageJson = requireFile('./package.json');
+
+export default [
+	{
+		input: 'src/index.tsx',
+		output: [
+			{
+				file: packageJson.main,
+				format: 'cjs',
+				sourcemap: true,
+			},
+			{
+				file: packageJson.module,
+				format: 'esm',
+				sourcemap: true,
+			},
+		],
+		external: [/\.css$/],
+		plugins: [
+			peerDepsExternal(),
+			resolve(),
+			commonjs(),
+			typescript(),
+			postcss({
+				modules: true,
+			}),
+		],
+	},
+	// {
+	// 	input: 'lib/index.d.ts',
+	// 	output: [{ file: 'lib/index.d.ts', format: 'es' }],
+	// 	plugins: [dts()],
+	// 	external: [/\.css$/],
+	// },
+];
