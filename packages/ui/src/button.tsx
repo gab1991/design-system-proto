@@ -1,5 +1,5 @@
 /// <reference types="../../../types/sources.d.ts" />;
-import * as styles from './button.module.css';
+import styles from './button.module.css';
 
 export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 	children: React.ReactNode;
