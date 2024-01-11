@@ -5,3 +5,14 @@
 	min-height: 500px;
 	border-radius: 40px;
 }
+
+.jo {
+	background-position: "center";
+}
+
+.container {
+	border: 1px solid black;
+	width: 500px;
+	height: 500px;
+	background-color: cadetblue;
+}

@@ -1,40 +1,40 @@
-declare module '*.avif' {
+declare module "*.avif" {
 	const source: string;
 	export default source;
 }
 
-declare module '*.bmp' {
+declare module "*.bmp" {
 	const source: string;
 	export default source;
 }
 
-declare module '*.gif' {
+declare module "*.gif" {
 	const source: string;
 	export default source;
 }
 
-declare module '*.jpg' {
+declare module "*.jpg" {
 	const source: string;
 	export default source;
 }
 
-declare module '*.jpeg' {
+declare module "*.jpeg" {
 	const source: string;
 	export default source;
 }
 
-declare module '*.png' {
+declare module "*.png" {
 	const source: string;
 	export default source;
 }
 
-declare module '*.webp' {
+declare module "*.webp" {
 	const source: string;
 	export default source;
 }
 
-declare module '*.svg' {
-	import type * as React from 'react';
+declare module "*.svg" {
+	import type * as React from "react";
 
 	export const ReactComponent: React.FunctionComponent<React.SVGProps<SVGSVGElement> & { title?: string }>;
 
@@ -42,7 +42,7 @@ declare module '*.svg' {
 	export default source;
 }
 
-declare module '*.module.css' {
+declare module "*.module.css" {
 	interface IClassNames {
 		[className: string]: string;
 	}
@@ -50,12 +50,12 @@ declare module '*.module.css' {
 	export = classNames;
 }
 
-declare module '*.module.scss' {
+declare module "*.module.scss" {
 	const classes: Readonly<Record<string, string>>;
 	export default classes;
 }
 
-declare module '*.module.sass' {
+declare module "*.module.sass" {
 	const classes: Readonly<Record<string, string>>;
 	export default classes;
 }

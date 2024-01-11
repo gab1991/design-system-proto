@@ -21,5 +21,10 @@
 	"packageManager": "pnpm@8.14.0",
 	"volta": {
 		"node": "20.10.0"
+	},
+	"@parcel/transformer-css": {
+		"cssModules": {
+			"pattern": "design-system-[hash]-[local]"
+		}
 	}
 }

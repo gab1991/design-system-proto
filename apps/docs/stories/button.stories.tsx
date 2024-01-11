@@ -1,13 +1,13 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import { Button } from '@acme/ui';
+import type { Meta, StoryObj } from "@storybook/react";
+import { Button, Container } from "@acme/ui";
 
 const meta: Meta<typeof Button> = {
 	component: Button,
-	title: 'Button',
+	title: "Button",
 	argTypes: {
 		type: {
-			control: { type: 'radio' },
-			options: ['button', 'submit', 'reset'],
+			control: { type: "radio" },
+			options: ["button", "submit", "reset"],
 		},
 	},
 };
@@ -26,22 +26,11 @@ export const Primary: Story = {
 		<Button
 			{...props}
 			onClick={(): void => {
-				console.log('clicked');
+				console.log("clicked");
 			}}>
 			Hello
 		</Button>
 	),
-
-	args: {
-		children: 'Hello',
-		type: 'button',
-		// style: {
-		// 	color: 'blue',
-		// 	border: '1px solid gray',
-		// 	padding: 10,
-		// 	borderRadius: 10,
-		// },
-	},
 };
 
 export const Secondary: Story = {
@@ -49,20 +38,22 @@ export const Secondary: Story = {
 		<Button
 			{...props}
 			onClick={(): void => {
-				console.log('clicked');
+				throw new Error("from Secondary");
 			}}>
 			Hello
 		</Button>
 	),
 
 	args: {
-		children: 'Hello',
-		type: 'button',
-		// style: {
-		// 	color: 'blue',
-		// 	backgroundColor: 'red',
-		// 	padding: 10,
-		// 	borderRadius: 10,
-		// },
+		style: {
+			color: "blue",
+			backgroundColor: "red",
+			padding: 10,
+			borderRadius: 10,
+		},
 	},
+};
+
+export const ContainerStory: Story = {
+	render: (props) => <Container {...props}>LOL</Container>,
 };
