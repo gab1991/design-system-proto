@@ -29,9 +29,9 @@ importers:
 
   apps/docs:
     dependencies:
-      '@acme/ui':
+      '@design-system/button':
         specifier: workspace:*
-        version: link:../../packages/ui
+        version: link:../../packages/button
       react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -82,27 +82,7 @@ importers:
         specifier: ^5.0.2
         version: 5.0.2
 
-  packages/eslint-config:
-    devDependencies:
-      '@vercel/style-guide':
-        specifier: ^5.0.0
-        version: 5.0.0(eslint@8.54.0)(prettier@3.0.3)(typescript@5.3.2)
-      eslint-config-turbo:
-        specifier: ^1.10.12
-        version: 1.10.13(eslint@8.54.0)
-      eslint-plugin-mdx:
-        specifier: ^2.2.0
-        version: 2.2.0(eslint@8.54.0)
-      eslint-plugin-only-warn:
-        specifier: ^1.1.0
-        version: 1.1.0
-      eslint-plugin-storybook:
-        specifier: ^0.6.13
-        version: 0.6.13(eslint@8.54.0)(typescript@5.3.2)
-
-  packages/typescript-config: {}
-
-  packages/ui:
+  packages/button:
     devDependencies:
       '@babel/core':
         specifier: ^7.12.0
@@ -131,6 +111,26 @@ importers:
       typescript:
         specifier: ^5.3.2
         version: 5.3.2
+
+  packages/eslint-config:
+    devDependencies:
+      '@vercel/style-guide':
+        specifier: ^5.0.0
+        version: 5.0.0(eslint@8.54.0)(prettier@3.0.3)(typescript@5.3.2)
+      eslint-config-turbo:
+        specifier: ^1.10.12
+        version: 1.10.13(eslint@8.54.0)
+      eslint-plugin-mdx:
+        specifier: ^2.2.0
+        version: 2.2.0(eslint@8.54.0)
+      eslint-plugin-only-warn:
+        specifier: ^1.1.0
+        version: 1.1.0
+      eslint-plugin-storybook:
+        specifier: ^0.6.13
+        version: 0.6.13(eslint@8.54.0)(typescript@5.3.2)
+
+  packages/typescript-config: {}
 
 packages:
 
@@ -2735,7 +2735,7 @@ packages:
       '@parcel/workers': 2.10.3(@parcel/core@2.10.3)
       abortcontroller-polyfill: 1.7.5
       base-x: 3.0.9
-      browserslist: 4.21.10
+      browserslist: 4.22.2
       clone: 2.1.2
       dotenv: 7.0.0
       dotenv-expand: 5.1.0
@@ -2828,7 +2828,7 @@ packages:
       '@parcel/plugin': 2.10.3(@parcel/core@2.10.3)
       '@parcel/source-map': 2.1.1
       '@parcel/utils': 2.10.3
-      browserslist: 4.21.10
+      browserslist: 4.22.2
       lightningcss: 1.22.1
       nullthrows: 1.1.1
     transitivePeerDependencies:
@@ -3123,7 +3123,7 @@ packages:
       '@parcel/plugin': 2.10.3(@parcel/core@2.10.3)
       '@parcel/source-map': 2.1.1
       '@parcel/utils': 2.10.3
-      browserslist: 4.21.10
+      browserslist: 4.22.2
       json5: 2.2.3
       nullthrows: 1.1.1
       semver: 7.5.4
@@ -3139,7 +3139,7 @@ packages:
       '@parcel/plugin': 2.10.3(@parcel/core@2.10.3)
       '@parcel/source-map': 2.1.1
       '@parcel/utils': 2.10.3
-      browserslist: 4.21.10
+      browserslist: 4.22.2
       lightningcss: 1.22.1
       nullthrows: 1.1.1
     transitivePeerDependencies:
@@ -3190,7 +3190,7 @@ packages:
       '@parcel/utils': 2.10.3
       '@parcel/workers': 2.10.3(@parcel/core@2.10.3)
       '@swc/helpers': 0.5.3
-      browserslist: 4.21.10
+      browserslist: 4.22.2
       nullthrows: 1.1.1
       regenerator-runtime: 0.13.11
       semver: 7.5.4

@@ -1,5 +1,5 @@
 {
-	"name": "@acme/ui",
+	"name": "@design-system/button",
 	"version": "0.0.0",
 	"main": "dist/index.js",
 	"module": "dist/index.mjs",
