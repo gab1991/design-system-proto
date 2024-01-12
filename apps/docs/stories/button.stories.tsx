@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { Button, LinkKek } from "@design-system/button";
 import { Container } from "@design-system/container";
+import "@design-system/styles/dist/index.css";
 
 const meta: Meta<typeof Button> = {
 	component: Button,

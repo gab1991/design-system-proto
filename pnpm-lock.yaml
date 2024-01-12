@@ -35,6 +35,9 @@ importers:
       '@design-system/container':
         specifier: workspace:*
         version: link:../../packages/container
+      '@design-system/styles':
+        specifier: workspace:*
+        version: link:../../packages/styles
       react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -193,6 +196,12 @@ importers:
       eslint-plugin-storybook:
         specifier: ^0.6.13
         version: 0.6.13(eslint@8.54.0)(typescript@5.3.2)
+
+  packages/styles:
+    devDependencies:
+      parcel:
+        specifier: ^2.10.3
+        version: 2.10.3(typescript@5.3.2)
 
   packages/typescript-config: {}
 

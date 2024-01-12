@@ -1,0 +1,23 @@
+{
+	"name": "@design-system/styles",
+	"version": "0.0.0",
+	"style": "./dist/index.css",
+	"sideEffects": [
+		"*.css"
+	],
+	"license": "MIT",
+	"files": [
+		"dist/**"
+	],
+	"scripts": {
+		"build": "parcel build src/index.css",
+		"dev": "parcel watch src/index.css",
+		"clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+	},
+	"devDependencies": {
+		"parcel": "^2.10.3"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
+}
