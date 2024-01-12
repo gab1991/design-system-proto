@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Button } from "@design-system/button";
+import { Button, LinkKek } from "@design-system/button";
 import { Container } from "@design-system/container";
 
 const meta: Meta<typeof Button> = {
@@ -24,35 +24,21 @@ type Story = StoryObj<typeof Button>;
  */
 export const Primary: Story = {
 	render: (props) => (
-		<Button
-			{...props}
-			onClick={(): void => {
-				console.log("clicked");
-			}}>
+		<Button {...props} onClick={(): void => {}}>
 			Hello
 		</Button>
 	),
 };
 
 export const Secondary: Story = {
-	render: (props) => (
-		<Button
-			{...props}
+	render: () => (
+		<LinkKek
 			onClick={(): void => {
 				throw new Error("from Secondary");
 			}}>
 			Hello
-		</Button>
+		</LinkKek>
 	),
-
-	args: {
-		style: {
-			color: "blue",
-			backgroundColor: "red",
-			padding: 10,
-			borderRadius: 10,
-		},
-	},
 };
 
 export const ContainerStory: Story = {

@@ -10,9 +10,10 @@
 	background-position: "center";
 }
 
-.container {
-	border: 1px solid black;
-	width: 500px;
-	height: 500px;
-	background-color: cadetblue;
+.link {
+	display: block;
+	color: white;
+	background-color: blue;
+	height: 400px;
+	width: 300px;
 }
