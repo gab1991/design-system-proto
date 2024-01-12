@@ -10,7 +10,3 @@ export function Button({ children, ...other }: ButtonProps): JSX.Element {
 		</button>
 	);
 }
-
-export function Container(props: { children: React.ReactNode }): JSX.Element {
-	return <div className={styles.container}>{props.children}</div>;
-}
