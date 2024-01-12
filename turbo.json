@@ -5,6 +5,7 @@
 			"outputs": ["dist/**", "storybook-static/**"],
 			"dependsOn": ["^build"]
 		},
+		"serve-storybook": {},
 		"lint": {},
 		"dev": {
 			"cache": false,

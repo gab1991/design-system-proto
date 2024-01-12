@@ -3,6 +3,7 @@
 	"scripts": {
 		"build": "turbo run build",
 		"build-packages": "turbo run build --filter='./packages/*'",
+		"serve-storybook": "turbo run serve-storybook",
 		"dev": "turbo run dev",
 		"lint": "turbo run lint",
 		"clean": "turbo run clean && rm -rf node_modules",
