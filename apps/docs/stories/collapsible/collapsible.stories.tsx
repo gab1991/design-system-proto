@@ -2,8 +2,6 @@ import type { Meta, StoryObj } from "@storybook/react";
 import * as Collapsible from "@design-system/collapsible";
 import styles from "./collapsible.module.css";
 
-import "@design-system/styles/dist/index.css";
-
 const meta: Meta = {
 	title: "Collapsible",
 };
