@@ -11,7 +11,7 @@
 	],
 	"scripts": {
 		"build": "parcel build index.css",
-		"dev": "parcel watch index.css",
+		"dev": "parcel watch index.css --port $(../../scripts/getPort.sh)",
 		"clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
 	},
 	"devDependencies": {
