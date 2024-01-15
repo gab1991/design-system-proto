@@ -1,6 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { Button, LinkKek } from "@design-system/button";
-import { Container } from "@design-system/container";
 import "@design-system/styles/dist/index.css";
 
 const meta: Meta<typeof Button> = {
@@ -40,8 +39,4 @@ export const Secondary: Story = {
 			Hello
 		</LinkKek>
 	),
-};
-
-export const ContainerStory: Story = {
-	render: (props) => <Container {...props}>LOL</Container>,
 };

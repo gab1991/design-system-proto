@@ -1,10 +1,10 @@
 {
-	"name": "@design-system/container",
+	"name": "@design-system/collapsible",
 	"version": "0.0.0",
+	"source": "./src/index.tsx",
 	"main": "./dist/index.cjs",
 	"module": "./dist/index.mjs",
 	"types": "./dist/index.d.ts",
-	"source": "./src/index.tsx",
 	"sideEffects": [
 		"*.css"
 	],
@@ -13,13 +13,16 @@
 		"dist/**"
 	],
 	"scripts": {
-		"build": "tsc --noEmit && parcel build",
+		"build": "tsc --noEmit && parcel build --no-cache",
 		"dev": "parcel watch",
 		"lint": "eslint . --max-warnings 0",
 		"clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
 	},
 	"peerDependencies": {
 		"react": "^18.0.0"
+	},
+	"dependencies": {
+		"@radix-ui/react-collapsible": "^1.0.3"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.12.0",

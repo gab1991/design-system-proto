@@ -1,0 +1,40 @@
+.trigger {
+	background-color: peru;
+	cursor: pointer;
+
+	&[data-disabled] {
+		cursor: not-allowed;
+	}
+}
+
+.content {
+	overflow: hidden;
+
+	&[data-state="open"] {
+		animation: slide-down 100ms ease-out;
+	}
+
+	&[data-state="closed"] {
+		animation: slide-up 100ms ease-out;
+	}
+}
+
+@keyframes slide-down {
+	from {
+		height: 0;
+	}
+
+	to {
+		height: var(--radix-collapsible-content-height);
+	}
+}
+
+@keyframes slide-up {
+	from {
+		height: var(--radix-collapsible-content-height);
+	}
+
+	to {
+		height: 0;
+	}
+}

@@ -13,7 +13,7 @@
 	"dependencies": {
 		"@design-system/button": "workspace:*",
 		"@design-system/styles": "workspace:*",
-		"@design-system/container": "workspace:*",
+		"@design-system/collapsible": "workspace:*",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0"
 	},

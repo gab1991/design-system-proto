@@ -13,7 +13,7 @@
 		"dist/**"
 	],
 	"scripts": {
-		"build": "tsc --noEmit && parcel build",
+		"build": "tsc --noEmit && parcel build --no-cache",
 		"dev": "parcel watch",
 		"lint": "eslint . --max-warnings 0",
 		"clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
