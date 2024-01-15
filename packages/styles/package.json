@@ -10,8 +10,8 @@
 		"dist/**"
 	],
 	"scripts": {
-		"build": "parcel build src/index.css",
-		"dev": "parcel watch src/index.css",
+		"build": "parcel build index.css",
+		"dev": "parcel watch index.css",
 		"clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
 	},
 	"devDependencies": {
