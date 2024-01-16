@@ -1,6 +1,6 @@
 {
 	"name": "@repo/tree-shaking-tester",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"private": true,
 	"source": "./src/index.tsx",
 	"main": "./dist/index.cjs",
