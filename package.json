@@ -10,12 +10,13 @@
 		"format": "prettier --write \"**/*.{ts,tsx,md}\"",
 		"changeset": "changeset",
 		"version-packages": "changeset version",
-		"release": "turbo run build --filter=docs^... && changeset publish"
+		"release": "turbo run build --filter=docs^... && dotenv -- changeset publish"
 	},
 	"devDependencies": {
 		"@changesets/cli": "^2.25.2",
 		"@parcel/packager-ts": "2.10.3",
 		"@parcel/transformer-typescript-types": "2.10.3",
+		"dotenv-cli": "^7.3.0",
 		"prettier": "^3.0.3",
 		"turbo": "latest",
 		"typescript": ">=3.0.0"
