@@ -1,5 +1,5 @@
 {
-	"name": "@design-system/button",
+	"name": "@gaber32188/button",
 	"version": "0.0.0",
 	"source": "./src/index.tsx",
 	"main": "./dist/index.cjs",

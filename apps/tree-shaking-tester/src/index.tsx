@@ -1,4 +1,4 @@
-import { add, Button } from "@design-system/button";
+import { add, Button } from "@gaber32188/button";
 
 export function App(): JSX.Element {
 	console.log(add(1, 2));

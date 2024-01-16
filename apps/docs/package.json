@@ -11,7 +11,7 @@
 		"lint": "eslint ./stories/*.stories.tsx --max-warnings 0"
 	},
 	"dependencies": {
-		"@design-system/button": "workspace:*",
+		"@gaber32188/button": "workspace:*",
 		"@design-system/styles": "workspace:*",
 		"@design-system/collapsible": "workspace:*",
 		"react": "^18.2.0",

@@ -9,13 +9,13 @@
 		"module": {
 			"optimize": true,
 			"includeNodeModules": [
-				"@design-system/button"
+				"@gaber32188/button"
 			]
 		},
 		"main": {
 			"optimize": true,
 			"includeNodeModules": [
-				"@design-system/button"
+				"@gaber32188/button"
 			]
 		}
 	},
@@ -23,7 +23,7 @@
 		"tree-shake": "parcel build --no-source-maps"
 	},
 	"dependencies": {
-		"@design-system/button": "workspace:*",
+		"@gaber32188/button": "workspace:*",
 		"react": ">=18"
 	},
 	"devDependencies": {

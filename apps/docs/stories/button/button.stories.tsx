@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Button, LinkKek } from "@design-system/button";
+import { Button, LinkKek } from "@gaber32188/button";
 
 const meta: Meta<typeof Button> = {
 	component: Button,
