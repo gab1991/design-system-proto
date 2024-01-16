@@ -29,15 +29,15 @@ importers:
 
   apps/docs:
     dependencies:
-      '@design-system/collapsible':
-        specifier: workspace:*
-        version: link:../../packages/collapsible
-      '@design-system/styles':
-        specifier: workspace:*
-        version: link:../../packages/styles
       '@gaber32188/button':
         specifier: workspace:*
         version: link:../../packages/button
+      '@gaber32188/collapsible':
+        specifier: workspace:*
+        version: link:../../packages/collapsible
+      '@gaber32188/styles':
+        specifier: workspace:*
+        version: link:../../packages/styles
       react:
         specifier: ^18.2.0
         version: 18.2.0

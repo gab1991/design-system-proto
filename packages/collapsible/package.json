@@ -1,5 +1,6 @@
 {
-	"name": "@design-system/collapsible",
+	"name": "@gaber32188/collapsible",
+	"description": "A collapsible component for React",
 	"version": "0.0.0",
 	"source": "./src/index.tsx",
 	"main": "./dist/index.cjs",
