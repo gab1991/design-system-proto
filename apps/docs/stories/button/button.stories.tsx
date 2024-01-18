@@ -34,7 +34,8 @@ export const Secondary: Story = {
 		<LinkKek
 			onClick={(): void => {
 				throw new Error("from Secondary");
-			}}>
+			}}
+		>
 			Hello
 		</LinkKek>
 	),

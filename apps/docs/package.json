@@ -14,6 +14,7 @@
 		"@gaber32188/button": "workspace:*",
 		"@gaber32188/styles": "workspace:*",
 		"@gaber32188/collapsible": "workspace:*",
+		"@gaber32188/icons": "workspace:*",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0"
 	},

@@ -2,11 +2,13 @@
 	"name": "@gaber32188/icons",
 	"description": "An svg based react components",
 	"version": "0.1.0",
-	"source": "./src/index.tsx",
+	"source": "./src/components/index.ts",
 	"main": "./dist/index.cjs",
 	"module": "./dist/index.mjs",
 	"types": "./dist/index.d.ts",
-	"sideEffects": false,
+	"sideEffects": [
+		"*.css"
+	],
 	"license": "MIT",
 	"files": [
 		"dist/**"

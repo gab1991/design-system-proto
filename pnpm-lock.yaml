@@ -38,6 +38,9 @@ importers:
       '@gaber32188/collapsible':
         specifier: workspace:*
         version: link:../../packages/collapsible
+      '@gaber32188/icons':
+        specifier: workspace:*
+        version: link:../../packages/icons
       '@gaber32188/styles':
         specifier: workspace:*
         version: link:../../packages/styles
