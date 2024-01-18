@@ -3,8 +3,45 @@ const propTypesTemplate = (ast, context) => {
 	const { imports, interfaces, componentName, props, jsx, exports } = ast;
 
 	props[0] = {
-		type: "Identifier",
-		name: "props",
+		type: "ObjectPattern",
+		properties: [
+			{
+				type: "ObjectProperty",
+				key: {
+					type: "Identifier",
+					name: "className",
+				},
+				value: {
+					type: "Identifier",
+					name: "className",
+				},
+			},
+			{
+				type: "ObjectProperty",
+				key: {
+					type: "Identifier",
+					name: "size",
+				},
+				value: {
+					type: "AssignmentPattern",
+					left: {
+						type: "Identifier",
+						name: "size",
+					},
+					right: {
+						type: "StringLiteral",
+						value: "s",
+					},
+				},
+			},
+			{
+				type: "RestElement",
+				argument: {
+					type: "Identifier",
+					name: "props",
+				},
+			},
+		],
 		typeAnnotation: {
 			type: "TSTypeAnnotation",
 			typeAnnotation: {
@@ -17,22 +54,16 @@ const propTypesTemplate = (ast, context) => {
 		},
 	};
 
-	const propSpreadAttrib = {
-		type: "JSXSpreadAttribute",
-		argument: {
-			type: "Identifier",
-			name: "restProps",
-		},
-	};
-	jsx.openingElement.attributes.push(propSpreadAttrib);
+	const updImports = [imports[1]];
 
-	return tpl`${imports}
-${interfaces}
+	return tpl`
+${updImports}
 import type { SvgComponentProps } from "../types";
 import * as styles from "../icon.module.css";
 
+${interfaces}
+
 function ${componentName}(${props}): JSX.Element {
-	const { className = "", size = "s", ...restProps } = props;
   return ${jsx};
 }
 

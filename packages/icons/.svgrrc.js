@@ -2,7 +2,7 @@ module.exports = {
 	outDir: "src/components",
 	typescript: true,
 	jsxRuntime: `automatic`,
-	expandProps: false,
+	expandProps: "end",
 	svgProps: { className: "{`${styles.svg} ${className}`}", "data-size": "{size}" },
 	ref: true,
 	template: require("./svgr/template.js"),
