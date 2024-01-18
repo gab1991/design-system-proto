@@ -211,6 +211,10 @@ importers:
         version: 0.6.15(eslint@8.54.0)(typescript@5.3.2)
 
   packages/icons:
+    dependencies:
+      '@gaber32188/utils':
+        specifier: workspace:*
+        version: link:../utils
     devDependencies:
       '@babel/core':
         specifier: ^7.12.0
@@ -259,6 +263,24 @@ importers:
         version: 2.10.3(typescript@5.3.2)
 
   packages/typescript-config: {}
+
+  packages/utils:
+    devDependencies:
+      '@babel/core':
+        specifier: ^7.12.0
+        version: 7.23.3
+      '@repo/eslint-config':
+        specifier: workspace:*
+        version: link:../eslint-config
+      eslint:
+        specifier: ^8.54.0
+        version: 8.54.0
+      parcel:
+        specifier: ^2.10.3
+        version: 2.10.3(typescript@5.3.2)
+      typescript:
+        specifier: ^5.3.2
+        version: 5.3.2
 
 packages:
 

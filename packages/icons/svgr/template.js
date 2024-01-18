@@ -59,6 +59,7 @@ const propTypesTemplate = (ast, context) => {
 	return tpl`
 ${updImports}
 import type { SvgComponentProps } from "../types";
+import { classCombine } from "@gaber32188/utils";
 import * as styles from "../icon.module.css";
 
 ${interfaces}

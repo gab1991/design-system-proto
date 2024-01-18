@@ -1,12 +1,13 @@
 import type { Ref} from "react";
 import { forwardRef } from "react";
+import { classCombine } from "@gaber32188/utils";
 import type { SvgComponentProps } from "../types";
 import * as styles from "../icon.module.css";
 
 function SvgAdd({ className, size = "s", ...props }: SvgComponentProps, ref: Ref<SVGSVGElement>): JSX.Element {
 	return (
 		<svg
-			className={`${styles.svg} ${className}`}
+			className={classCombine(styles.svg, className)}
 			data-name="Layer 1"
 			data-size={size}
 			fill="currentColor"

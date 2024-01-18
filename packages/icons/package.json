@@ -23,6 +23,9 @@
 	"peerDependencies": {
 		"react": "^18.0.0"
 	},
+	"dependencies": {
+		"@gaber32188/utils": "workspace:*"
+	},
 	"devDependencies": {
 		"@babel/core": "^7.12.0",
 		"@parcel/config-default": "2.10.3",
