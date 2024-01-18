@@ -14,9 +14,9 @@
 		"dist/**"
 	],
 	"scripts": {
-		"svg": "svgr -- src/originals && eslint src/components --fix",
-		"build": "tsc --noEmit && parcel build --no-cache",
-		"dev": "parcel watch --port $(../../scripts/getPort.sh)",
+		"svg": "svgr -- src/svg && eslint src/components --fix",
+		"build": "pnpm run svg && tsc --noEmit && parcel build --no-cache",
+		"dev": "pnpm run svg && parcel watch --port $(../../scripts/getPort.sh)",
 		"lint": "eslint . --max-warnings 0",
 		"clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
 	},

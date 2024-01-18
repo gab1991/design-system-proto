@@ -19,12 +19,12 @@ type Story = StoryObj;
 export const General: Story = {
 	render: () => (
 		<div style={{ color: "red" }}>
-			<Icons.ArrowLeft />
-			<Icons.ArrowLeft size="m" />
-			<Icons.ArrowLeft size="l" />
-			<Icons.ArrowRight />
-			<Icons.ArrowRight size="m" />
-			<Icons.ArrowRight size="l" />
+			<Icons.Action />
+			<Icons.Action size="m" />
+			<Icons.Action size="l" />
+			<Icons.Add />
+			<Icons.Add size="m" />
+			<Icons.Add size="l" />
 		</div>
 	),
 };

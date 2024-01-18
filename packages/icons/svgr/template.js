@@ -2,18 +2,6 @@ const propTypesTemplate = (ast, context) => {
 	const { tpl } = context;
 	const { imports, interfaces, componentName, props, jsx, exports } = ast;
 
-	imports[0].specifiers.push({
-		type: "ImportSpecifier",
-		local: {
-			type: "Identifier",
-			name: "SVGProps",
-		},
-		imported: {
-			type: "Identifier",
-			name: "SVGProps",
-		},
-	});
-
 	props[0] = {
 		type: "Identifier",
 		name: "props",
@@ -40,12 +28,8 @@ const propTypesTemplate = (ast, context) => {
 
 	return tpl`${imports}
 ${interfaces}
-import type { Size } from "../constants";
+import type { SvgComponentProps } from "../types";
 import * as styles from "../icon.module.css";
-
-interface SvgComponentProps extends SVGProps<SVGSVGElement> {
-	size?: Size;
-}
 
 function ${componentName}(${props}): JSX.Element {
 	const { className = "", size = "s", ...restProps } = props;
