@@ -16,15 +16,20 @@ type Story = StoryObj;
  * to learn how to use render functions.
  */
 
+type Keys = keyof typeof Icons;
+const IconKeys = Object.keys(Icons) as Keys[];
+const ComponentArray = IconKeys.map((key) => Icons[key]);
+
 export const General: Story = {
 	render: () => (
 		<div style={{ color: "red" }}>
-			<Icons.Action />
-			<Icons.Action size="m" />
-			<Icons.Action size="l" />
-			<Icons.Add />
-			<Icons.Add size="m" />
-			<Icons.Add size="l" />
+			{ComponentArray.map((Icon, index) => (
+				<>
+					<Icon key={index + "s"} />
+					<Icon key={index + "m"} size="m" />
+					<Icon key={index + "l"} size="l" />
+				</>
+			))}
 		</div>
 	),
 };
