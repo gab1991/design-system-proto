@@ -4,8 +4,10 @@ import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 import typescript from "@rollup/plugin-typescript";
 import postcss from "rollup-plugin-postcss";
+// import css from "./cssPlugin.js";
 import css from "./cssPlugin.js";
 import dts from "rollup-plugin-dts";
+import { libStylePlugin } from "rollup-plugin-lib-style";
 
 // This is required to read package.json file when
 // using Native ES modules in Node.js
@@ -34,10 +36,13 @@ export default [
 			resolve(),
 			commonjs(),
 			typescript(),
-			css({ include: "**/*.css" }),
-			// postcss({
-			// 	modules: true,
-			// }),
+
+			// libStylePlugin(), // This will output all your CSS into one file named 'bundle.css'
+			postcss({
+				modules: true,
+				extract: true, // Detach CSS into a separate file
+				inject: true,
+			}),
 		],
 	},
 	// {

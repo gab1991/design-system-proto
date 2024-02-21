@@ -27,6 +27,7 @@
 		"@rollup/plugin-commonjs": "^25.0.7",
 		"@rollup/plugin-node-resolve": "^15.2.3",
 		"@rollup/plugin-typescript": "^11.1.6",
+		"@rollup/pluginutils": "^5.1.0",
 		"@types/react": "^18.2.38",
 		"@types/react-dom": "^18.2.17",
 		"eslint": "^8.54.0",
