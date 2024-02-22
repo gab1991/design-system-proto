@@ -1,4 +1,5 @@
 import { createRequire } from "node:module";
+import { SourceMapGenerator } from "source-map";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
@@ -41,14 +42,13 @@ export default [
 			postcss({
 				modules: true,
 				extract: true, // Detach CSS into a separate file
-				inject: true,
 			}),
+			{
+				name: "add-css-import",
+				renderChunk(code) {
+					return `import './index.css';\n` + code;
+				},
+			},
 		],
 	},
-	// {
-	// 	input: 'lib/index.d.ts',
-	// 	output: [{ file: 'lib/index.d.ts', format: 'es' }],
-	// 	plugins: [dts()],
-	// 	external: [/\.css$/],
-	// },
 ];
