@@ -1,6 +1,5 @@
 {
 	"extends": "../../tsconfig.lib.json",
-	"include": [".", "../../types"],
 	"compilerOptions": {
 		"resolveJsonModule": true,
 		"declarationDir": "../../types"

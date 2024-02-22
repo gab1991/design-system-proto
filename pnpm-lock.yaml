@@ -134,6 +134,9 @@ importers:
       eslint:
         specifier: ^8.54.0
         version: 8.54.0
+      magic-string:
+        specifier: ^0.30.7
+        version: 0.30.7
       parcel:
         specifier: ^2.10.3
         version: 2.10.3(postcss@8.4.31)(typescript@5.3.2)
@@ -4065,7 +4068,7 @@ packages:
       estree-walker: 2.0.2
       glob: 8.1.0
       is-reference: 1.2.1
-      magic-string: 0.30.3
+      magic-string: 0.30.7
       rollup: 4.9.4
     dev: true
 
@@ -4569,7 +4572,7 @@ packages:
       express: 4.18.2
       find-cache-dir: 3.3.2
       fs-extra: 11.1.1
-      magic-string: 0.30.3
+      magic-string: 0.30.5
       rollup: 3.29.4
       typescript: 5.3.2
       vite: 5.0.2
@@ -4930,7 +4933,7 @@ packages:
       '@storybook/builder-vite': 7.6.7(typescript@5.3.2)(vite@5.0.2)
       '@storybook/react': 7.6.7(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.2)
       '@vitejs/plugin-react': 3.1.0(vite@5.0.2)
-      magic-string: 0.30.3
+      magic-string: 0.30.5
       react: 18.2.0
       react-docgen: 7.0.1
       react-dom: 18.2.0(react@18.2.0)
@@ -9835,15 +9838,15 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
 
-  /magic-string@0.30.3:
-    resolution: {integrity: sha512-B7xGbll2fG/VjP+SWg4sX3JynwIU0mjoTc6MPpKNuIvftk6u6vqhDnk1R80b8C2GBR6ywqy+1DcKBrevBg+bmw==}
+  /magic-string@0.30.5:
+    resolution: {integrity: sha512-7xlpfBaQaP/T6Vh8MO/EqXSW5En6INHEvEXQiuff7Gku0PWjU3uf6w/j9o7O+SpB5fOAkrI5HeoNgwjEO0pFsA==}
     engines: {node: '>=12'}
     dependencies:
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
 
-  /magic-string@0.30.5:
-    resolution: {integrity: sha512-7xlpfBaQaP/T6Vh8MO/EqXSW5En6INHEvEXQiuff7Gku0PWjU3uf6w/j9o7O+SpB5fOAkrI5HeoNgwjEO0pFsA==}
+  /magic-string@0.30.7:
+    resolution: {integrity: sha512-8vBuFF/I/+OSLRmdf2wwFCJCz+nSn0m6DPvGH1fS/KiQoSaR+sETbov0eIk9KhEKy8CYqIkIAnbohxT/4H0kuA==}
     engines: {node: '>=12'}
     dependencies:
       '@jridgewell/sourcemap-codec': 1.4.15
@@ -12233,7 +12236,7 @@ packages:
       rollup: ^3.29.4 || ^4
       typescript: ^4.5 || ^5.0
     dependencies:
-      magic-string: 0.30.5
+      magic-string: 0.30.7
       rollup: 4.9.4
       typescript: 5.3.2
     optionalDependencies:
