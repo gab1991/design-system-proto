@@ -20,7 +20,8 @@
 		"clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
 	},
 	"peerDependencies": {
-		"react": "^18.0.0"
+		"react": "^18.0.0",
+		"@gaber32188/utils": "workspace:*"
 	},
 	"dependencies": {
 		"@radix-ui/react-collapsible": "^1.0.3"
