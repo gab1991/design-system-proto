@@ -21,7 +21,7 @@
 	},
 	"peerDependencies": {
 		"react": "^18.0.0",
-		"@gaber32188/styles": "workspace:^0"
+		"@gaber32188/styles": "workspace:^"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.12.0",
