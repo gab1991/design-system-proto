@@ -21,7 +21,7 @@
 	},
 	"peerDependencies": {
 		"react": "^18.0.0",
-		"@gaber32188/utils": "workspace:*"
+		"@gaber32188/styles": "workspace:^"
 	},
 	"dependencies": {
 		"@radix-ui/react-collapsible": "^1.0.3"
