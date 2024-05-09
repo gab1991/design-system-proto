@@ -1,5 +1,12 @@
 # @repo/docs
 
+## 0.0.6
+
+### Patch Changes
+
+- Updated dependencies
+  - @gaber32188/icons@0.3.0
+
 ## 0.0.5
 
 ### Patch Changes

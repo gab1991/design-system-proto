@@ -1,5 +1,11 @@
 # @gaber32188/icons
 
+## 0.3.0
+
+### Minor Changes
+
+- add icon
+
 ## 0.2.0
 
 ### Minor Changes
