@@ -6,3 +6,7 @@
 	--color-text: #333;
 	--border-radius: 0.25rem;
 }
+
+.button {
+	background-color: var(--color-primary);
+}
