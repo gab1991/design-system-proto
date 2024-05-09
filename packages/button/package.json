@@ -1,7 +1,7 @@
 {
 	"name": "@gaber32188/button",
 	"description": "A button component",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"source": "./src/index.tsx",
 	"main": "./dist/index.cjs",
 	"module": "./dist/index.mjs",
@@ -21,7 +21,7 @@
 	},
 	"peerDependencies": {
 		"react": "^18.0.0",
-		"@gaber32188/styles": "workspace:^0.0.1"
+		"@gaber32188/styles": "workspace:^0.1.0"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.12.0",
