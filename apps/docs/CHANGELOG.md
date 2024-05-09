@@ -1,5 +1,13 @@
 # @repo/docs
 
+## 0.0.5
+
+### Patch Changes
+
+- Updated dependencies
+  - @gaber32188/styles@0.2.0
+  - @gaber32188/button@2.0.0
+
 ## 0.0.4
 
 ### Patch Changes
